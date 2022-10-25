@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+}
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+    font-size: 25px;    
+    background-color: rgb(39, 8, 39);
+}
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+body {
+    height: 300vh;
+    width: 160vh;
+    margin: auto;
+    margin-top: 20px;
+    border: solid 1px;
+    border-radius: 15px;
+    background: rgba(26, 26, 40, 0.451);
+}
+.header {    
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    background: linear-gradient(36deg, rgba(2,0,36,1) 16%, rgba(33,33,112,1) 51%, rgba(78, 2, 145, 0.645) 100%);
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    font-size: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 30px 7%;
+}
+.header .logo {
+    background-color: none;
+}    
+.header .logo img {
+    height: 70px;
+    border-radius: 67% 123%;
+}
+.header .search {
+    size: 150px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.header .search input {
+    text-transform: none;
+    border-radius: 30px;
+    width: 350px;
+    height: 50px;
+    background-color: rgb(12, 12, 71);
+    color:rgba(255, 255, 255, 0.75);
+}
+.header .search i {
+    height: 5px;
+    margin-top: 10px;
+    margin-left: 7.5px;
+    cursor: pointer;
+    color: rgb(250, 250, 250, 0.75);    
+    background-color: transparent;
+}
+.header .in {
+    background-color: transparent;
+}
+.header .in a {
+    background-color: #151030;
+    border-radius: 15px;
+    display: inline-flex;
+    padding: 15px;
+    color: rgb(250, 250, 250, 0.75);    
+    font-size: 16px;
+}
+.header .in a:hover {
+    transform: none;
+    color: #fff;
+}
+
+section {
+    padding: 10px 7%;
+}
+.btn {    
+    padding: 10px;
+    font-size: 20px;    
+    color: rgba(255, 255, 255, 0.75);
+    background: linear-gradient(12deg, rgba(50,21,70,1) 15%, rgba(16,14,48,1) 50%, rgba(6,30,88,1) 75%);   
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+.btn:hover {
+    transform: scale(1.2);
+}
+.tender {
+    width: 100%;
+    background-color:#151030;
+}
+.tender ul {
+    padding: 10px;
+    font-size: 20px;
+}
+.tender ul li {    
+    display: inline-flex;
+    margin-left: 15px;
+}
+.tender ul li a {
+    padding: 12px 21px;
+    color: rgba(255, 255, 255, 0.75);
+}
+.tender ul li a:hover {
+    transform: none;
+    color: #fff;
+} 
+.title {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.title h1 {
+    color: rgba(255, 255, 255, 0.75);
+}
+.title a {
+    font-size: 16px;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 10px;
+
+}
+.oneri {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    gap: 15px;    
+}
+.oneri a {
+    height: 255px;
+}
+.oneri img:hover {
+    transform: scale(1.2);
+}
+.oneri .imdb {    
+    background: rgba(255, 0, 0, 0.242) transparent;
+    margin-left: 105px;
+    margin-top: 5px;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000;
+    padding: 2px;
+}
+.oneri .oneri-baslik {
+    position: absolute;
+    text-align: center;
+    margin-top: -45px;
+    font-size: 17.5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 170px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.oneri a {
+    overflow: hidden;
+}
+.oneri .oneri-dizi-adi {    
+    color: yellow;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block!important;
+}
+.oneri a .cc {
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+}
+.oneri a .cc i{
+    color: yellow;
+}
+.oneri-bolum .container {
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+}
+.oneri-bolum .container a {
+    position: relative;
+    font-size: 16px;
+    overflow: hidden;
+    height: 150px;
+}
+.oneri-bolum .container .bolum-tarih {
+    position: absolute;
+    z-index: 1000;
+    padding: 2px;
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1000;
+}
+.oneri-bolum .container .bolum-baslik {
+    position: absolute;
+    z-index: 1000;
+    color: rgb(251, 255, 43);
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 260px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    margin-top: -43px;
+}
+.oneri-bolum .container .bolum-baslik .bolum-adi{
+    color: #fff;
+}
+.oneri-bolum .container .bolum-baslik .dizi-adi {
+    color: yellow;
+}
+.oneri-bolum .container a img:hover {
+    transform: scale(1.2);
+}
+.perfect-series {
+    margin-left: 50px;
+}
+.perfect-series .series-container {
+    display: flex;
+    font-size: 70%;
+    line-height: 1;    
+}
+.perfect-series .series-container a {
+    background-color: #1d1930;
+    display: inline-flex;
+    width: 200px;
+    display: flex;
+    margin: 5px;
+}
+.perfect-series .series-container a:hover {
+    transform: scale(1.2);
+}
+.perfect-series .series-container a img {
+    width: 80px;
+    height: 100%;
+}
+.perfect-series .series-container .serseries {
+    width: 120px;
+    height: 50px;
+    line-height: 0.8;
+    margin-left: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block!important;
+}
+.perfect-series .series-container .serseries .series-name {
+    color: yellow;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block!important;
+}
+.perfect-series .series-container .serseries .series-kind {
+    color: white;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block!important;
+}
+.dmca {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 12px;
+}
+.footer {
+    background:linear-gradient(36deg, rgba(2,0,36,1) 16%, rgba(33,33,112,1) 51%, rgba(78, 2, 145, 0.645) 100%);
+    display: flex;
+}
+.footer .footer-right {
+    display: inline-flex;
+    gap: 5px;
+}
+.footer .footer-left {
+    display: block;
+}
+.footer p a {
+    font-size: 13px;
+}
+.footer p a:hover {
+    text-decoration: underline;
+    color: red;
+}
+.footer .p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+}
+.footer .footer-right a {
+    color: white;
+}
